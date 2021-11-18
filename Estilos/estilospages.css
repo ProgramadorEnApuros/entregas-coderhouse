@@ -1,0 +1,151 @@
+
+*{
+    box-sizing: border-box;
+    margin: 1px;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+}
+body {
+    display: block;
+    background-color:rgba(221, 226, 214, 0.897);
+}
+footer {
+    text-align: center;
+    background-color:rgba(182, 185, 177, 0.39);
+    padding: 5px;
+    margin: 10px;
+}
+
+
+/* Navigation */
+.barraBusqueda {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    padding-bottom: 5px;
+    flex-wrap: wrap;
+    border-bottom: solid black 2px;
+}
+.tituloPri{
+    font-size: 6vh;
+}
+ul{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px;
+    margin-left: 0px;
+}
+button {
+	font-size: 20px;
+	border: solid black 2px;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+    margin: 5px;
+    padding: 3px;
+}
+button:hover {
+    background: black;
+    color: white;
+}
+.logoBusqueda{
+    width: 4em;
+    border: solid black 2px;
+}
+/*Contacto*/
+#cuerpoContacto {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin: 5px;
+    align-content: stretch;
+}
+
+#cuerpoContacto .contactoText {
+    text-align: center;
+    border: solid black;
+    min-width: 100px ;
+    font-size: 20px;
+}
+#cuerpoContacto .logoFacebook {
+    width: 75px;
+}
+#contacto-logo {
+    display: flex;
+    justify-content: center;
+}
+ #contacto-logo .laptop {
+     width: 100%;
+     min-height: 500px ;
+     min-width: 250px;
+     max-width: 1350px;
+     max-height: 575px;
+ }
+#cuerpoContacto img{
+    width: 100px;
+    height: 100px;
+}
+#Contacto footer {
+    text-align: center;
+}
+ /*Nosotros*/
+#Nosotros {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+}
+#Nosotros article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Nosotros .descripcionEmpresa{
+    border: solid black 2px;
+}
+#Nosotros .Nosotros {
+    max-height: 600px;
+    width: 100%;
+}
+#Nosotros footer{
+    text-align: center;
+    grid-column-start: span 2;
+}
+/*Clientes*/
+#clientes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    flex-wrap: wrap;
+}
+#clientes-id .tituloDerecha {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+#clientes .cliente1{
+    border: solid 5px black;
+    margin: 2px;
+    border:solid ;
+}
+#clientes .cliente2 {
+    margin: 2px;
+    border:solid ;
+}
+#clientes .cliente3 {
+    margin: 2px;
+
+    border:solid ;
+}
+.imgclt{
+    max-height: 439px;
+    align-items: stretch;
+    width: 100%;
+}

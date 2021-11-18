@@ -1,0 +1,178 @@
+*{
+    margin: 1px;
+    padding: 2px;
+    font-family: "Oswald", sans-serif;
+}
+body{
+    background-color:rgba(221, 226, 214, 0.897);
+    color: black;
+  
+}
+/* Navigation */
+.barraBusqueda {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    padding-bottom: 5px;
+    flex-wrap: wrap;
+    border-bottom: solid black 2px;
+}
+.tituloPri{
+    font-size: 6vh;
+}
+.barraBusqueda ul{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.barraBusqueda li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px;
+    margin-left: 0px;
+}
+.barraBusqueda button {
+	font-size: 20px;
+	border: solid black 2px;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+    margin: 5px;
+    padding: 3px;
+}
+.barraBusqueda button:hover {
+    background: black;
+    color: white;
+}
+.logoBusqueda{
+    width: 4em;
+    border: solid black 2px;
+}
+/* Cuerpo */
+/* Grid */
+.cuerpo{
+    display: grid;
+    grid-template-areas:
+    'hgroup hgroup hgroup'
+    'section section section'
+    'section section section'
+    'section section section'
+    'footer footer footer';
+}
+hgroup {
+    grid-area: hgroup;
+}
+section {
+    grid-area: section;
+}
+footer{
+    grid-area: footer;
+}
+/* Fin de Grid*/
+/* banner */
+.banner {
+    display: flex;
+    padding: 20px;
+    margin: 5px;  
+    flex-direction: column;
+    text-align: center;
+    background-image: url("../imagenes/Arequipa-fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment:scroll ;
+    background-position:top center;
+}
+.banner h1{
+    margin-top: 30%;
+    font-size: 50px;
+}
+
+/* fin de banner */
+section{
+    display: flex;
+    flex-flow: rowwrap;
+
+}
+/* Aside izquierda */
+.feedIzquierda {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 10%;
+    max-width: 255px;
+    min-width: 180px;
+    margin: 0px;
+    padding: 0px;
+    border: solid 2px;
+}
+aside img {
+    align-self: center;
+    width: 15vw;
+    max-width: 250px;
+    min-width: 175px;
+}
+
+ /*Fin Aside izquieda/
+ /* Article derecha */
+article img {
+     width: 100px;
+     height: 100px;
+ }
+article {
+    order: 2;
+    flex-grow: 90%;
+    display: grid;
+    padding: 0px;
+    margin: 0px;
+}
+.tituloDerecha {
+    font-size: 35px;
+    text-align: center;
+    border-bottom: solid black 3px;
+}
+.subcontderecha{
+    display: grid;
+    grid-template-areas:
+    'producto1 producto2'
+    'producto3 producto4';
+    align-items: stretch;
+    grid-column-gap: 3px;
+}
+#moda {
+    grid-area: producto1;
+    display: flex;
+    border: solid black 1px;
+}
+#instituciones{
+    grid-area: producto2;
+    display: flex;
+    border: solid black 1px;    
+}
+#diseño{
+    grid-area: producto3;
+    display: flex;
+    border: solid black 1px;
+}
+#Terceros{
+    grid-area: producto4;
+    display: flex;
+    border: solid black 1px;
+}
+
+/* Footer */
+.piePagina{
+    background-color:rgba(182, 185, 177, 0.39);
+}
+.piePagina p{
+    text-align: center;
+}
+/* ===== */
+/* media queries */
+@media (max-width: 425px){     
+    
+
+}
+
+
